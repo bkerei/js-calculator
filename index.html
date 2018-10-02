@@ -1,38 +1,54 @@
-<!DOCTYPE html>
+/*<!DOCTYPE html>
 <html>
 
 <head>
-        <meta charset="utf-8" />
+        
     <title>Calculator of Impending Doom</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="stylesheet.css">
     <link rel="shortcut icon" href="images/zim.jpg" type="image/x-icon">
     <script src="jquery-3.3.1.min.js"></script>
     <script src="calculator.js"></script>
 </head>
 <body>
-        <div class="container">
-        <div class="calculator">
-          <div class="calculator__display">0</div>
+
+  <div class="text-center">
+    <h1>Calculator Of Impending Doom!!</h1>
+    <h2>Made by Bobbi</h2>
+  </div>
+  <div id="calcOutput">
+    <span id="steps">0</span>
+  <hr/>
+  </div>
+  <div class="text-center" id="calculator">
+    <a class="btn btn-danger" id="deleteAll">AC</a>
+        <a class="btn btn-danger" id="backOne">CE</a>
+        <a class="btn btn-primary" id="/">/</a>
+        <a class="btn btn-primary" id="*">*</a>
+        <br/>
+        <a class="btn btn-primary" id="7">7</a>
+        <a class="btn btn-primary" id="8">8</a>
+        <a class="btn btn-primary" id="9">9</a>
+        <a class="btn btn-primary" id="-">-</a>
+        <br/>
+        <a class="btn btn-primary" id="4">4</a>
+        <a class="btn btn-primary" id="5">5</a>
+        <a class="btn btn-primary" id="6">6</a>
+        <a class="btn btn-primary" id="+">+</a>
+        <br/>
+        <a class="btn btn-primary" id="1">1</a>
+        <a class="btn btn-primary" id="2">2</a>
+        <a class="btn btn-primary" id="3">3</a>
+        <a class="btn btn-primary" id=".">.</a>
+        <br/>
+        <a class="btn btn-primary bigButton" id="0">0</a>
+        <a class="btn btn-primary bigButton" id="total">=</a>
+  </div>
+
     
-          <div class="calculator__keys">
-            <button class="key--operator" data-action="add">+</button>
-            <button class="key--operator" data-action="subtract">-</button>
-            <button class="key--operator" data-action="multiply">&times;</button>
-            <button class="key--operator" data-action="divide">÷</button>
-            <button>7</button>
-            <button>8</button>
-            <button>9</button>
-            <button>4</button>
-            <button>5</button>
-            <button>6</button>
-            <button>1</button>
-            <button>2</button>
-            <button>3</button>
-            <button>0</button>
-            <button data-action="decimal">.</button>
-            <button data-action="clear">AC</button>
-            <button class="key--equal" data-action="calculate">=</button>
-          </div>
-        </div>
-      </div>
+</body>
+</html> 
